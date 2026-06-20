@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Repati Kosam</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>💊 Repati Kosam</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+<a href="medication.html">💊 Medication</a>
+<a href="history.html">📜 History</a>
+<a href="records.html">📋 Medical Records</a>
+<a href="emergency-contact.html">🚨 Emergency</a>
+<a href="ai-assistant.html">🤖 AI Assistant</a>
+<a href="profile.html">👤 Profile</a>
+<a href="settings.html">⚙ Settings</a>
+<a href="index.html">🚪 Logout</a>
+
+</div>
+
+<!-- Topbar -->
+
+<div class="topbar">
+
+<h3>Dashboard</h3>
+
+<div class="profile">
+<img src="images/profile.png" alt="Profile">
+<div>
+<b>Srinivas</b>
+<br>
+<small>Patient</small>
+</div>
+</div>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+<!-- Welcome Card -->
+
+<div class="card">
+<h2>👋 Welcome Back, Srinivas!</h2>
+<p>
+Stay healthy and never miss your medicines.
+Your next medicine reminder is at <b>08:00 PM</b>.
+</p>
+</div>
+
+<!-- Statistics -->
+
+<div class="cards">
+
+<div class="stat-card">
+<h1>5</h1>
+<p>Active Medicines</p>
+</div>
+
+<div class="stat-card">
+<h1>3</h1>
+<p>Today's Reminders</p>
+</div>
+
+<div class="stat-card">
+<h1>95%</h1>
+<p>Adherence Rate</p>
+</div>
+
+<div class="stat-card">
+<h1>12</h1>
+<p>Medical Records</p>
+</div>
+
+</div>
+
+<!-- Medication Schedule -->
+
+<div class="card">
+
+<h2>💊 Today's Medication Schedule</h2>
+
+<table>
+
+<tr>
+<th>Medicine</th>
+<th>Dose</th>
+<th>Time</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Paracetamol</td>
+<td>500mg</td>
+<td>08:00 AM</td>
+<td class="taken">✅ Taken</td>
+</tr>
+
+<tr>
+<td>Vitamin D</td>
+<td>1 Tablet</td>
+<td>12:00 PM</td>
+<td class="taken">✅ Taken</td>
+</tr>
+
+<tr>
+<td>BP Tablet</td>
+<td>50mg</td>
+<td>08:00 PM</td>
+<td class="pending">⏳ Pending</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Quick Actions -->
+
+<div class="card">
+
+<h2>⚡ Quick Actions</h2>
+
+<button class="btn" onclick="location.href='medication.html'">
+➕ Add Medicine
+</button>
+
+<button class="btn" onclick="location.href='records.html'">
+📋 Upload Record
+</button>
+
+<button class="btn" onclick="location.href='ai-assistant.html'">
+🤖 Ask AI
+</button>
+
+</div>
+
+<!-- Health Summary -->
+
+<div class="card">
+
+<h2>❤️ Health Summary</h2>
+
+<p>✔ Medicines Taken This Month: <b>120</b></p>
+<p>❌ Missed Medicines: <b>5</b></p>
+<p>📈 Adherence Rate: <b>95%</b></p>
+<p>🩸 Blood Group: <b>O+</b></p>
+
+</div>
+
+<!-- Emergency Contact -->
+
+<div class="card">
+
+<h2>🚨 Emergency Contact</h2>
+
+<p><b>Name:</b> Likhitha Sree</p>
+<p><b>Relationship:</b> Daughter</p>
+<p><b>Phone:</b> +91 9876543210</p>
+
+<br>
+
+<button class="btn">
+📞 Call Contact
+</button>
+
+</div>
+
+<!-- AI Assistant -->
+
+<div class="card">
+
+<h2>🤖 AI Assistant</h2>
+
+<p>
+Need help with medicines, schedules, health tips,
+or medical records?
+</p>
+
+<br>
+
+<button class="btn"
+onclick="location.href='ai-assistant.html'">
+Open AI Assistant
+</button>
+
+</div>
+
+<!-- SOS Button -->
+
+<div class="card">
+
+<h2>🚨 Emergency SOS</h2>
+
+<button class="sos" onclick="sendSOS()">
+🚨 SEND SOS ALERT
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

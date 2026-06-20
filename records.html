@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Records - Repati Kosam</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fc;
+}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:250px;
+height:100%;
+background:#0f4c81;
+padding-top:20px;
+}
+
+.sidebar h2{
+color:white;
+text-align:center;
+margin-bottom:30px;
+}
+
+.sidebar a{
+display:block;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#1d7dd8;
+}
+
+.topbar{
+position:fixed;
+left:250px;
+right:0;
+top:0;
+height:70px;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 30px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.profile{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.profile img{
+width:45px;
+height:45px;
+border-radius:50%;
+}
+
+.main{
+margin-left:250px;
+margin-top:90px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+.card h2{
+color:#0f4c81;
+margin-bottom:15px;
+}
+
+.upload-box{
+border:2px dashed #1d7dd8;
+padding:40px;
+text-align:center;
+border-radius:15px;
+background:#f8fbff;
+}
+
+input, select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+padding:12px 20px;
+background:#1d7dd8;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0f4c81;
+}
+
+.records-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.record-card{
+background:#eef6ff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.record-card h3{
+color:#0f4c81;
+margin-bottom:10px;
+}
+
+.action-btn{
+margin-top:10px;
+margin-right:5px;
+}
+
+.delete{
+background:red;
+}
+
+.delete:hover{
+background:darkred;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Repati Kosam</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+<a href="medication.html">💊 Medication</a>
+<a href="history.html">📜 History</a>
+<a href="records.html">📋 Records</a>
+<a href="emergency.html">🚨 Emergency</a>
+<a href="ai-assistant.html">🤖 AI Assistant</a>
+<a href="profile.html">👤 Profile</a>
+
+</div>
+
+<div class="topbar">
+
+<h3>Medical Records</h3>
+
+<div class="profile">
+<img src="images/profile.png" alt="Profile">
+<div>
+<b>Srinivas</b><br>
+<small>Patient</small>
+</div>
+</div>
+
+</div>
+
+<div class="main">
+
+<div class="card">
+
+<h2>Upload Medical Record</h2>
+
+<form>
+
+<select required>
+<option>Select Record Type</option>
+<option>Prescription</option>
+<option>Blood Test</option>
+<option>X-Ray</option>
+<option>Scan Report</option>
+<option>Doctor Report</option>
+<option>Vaccination Record</option>
+</select>
+
+<input type="text" placeholder="Record Title" required>
+
+<input type="date" required>
+
+<div class="upload-box">
+📁 Upload PDF, JPG, PNG
+<br><br>
+<input type="file">
+</div>
+
+<br>
+
+<button type="submit">Upload Record</button>
+
+</form>
+
+</div>
+
+<div class="card">
+
+<h2>My Medical Records</h2>
+
+<div class="records-grid">
+
+<div class="record-card">
+<h3>📄 Prescription</h3>
+<p><b>Title:</b> General Checkup</p>
+<p><b>Date:</b> 15-06-2026</p>
+
+<button class="action-btn">View</button>
+<button class="action-btn">Download</button>
+<button class="action-btn delete">Delete</button>
+</div>
+
+<div class="record-card">
+<h3>🩸 Blood Test</h3>
+<p><b>Title:</b> CBC Report</p>
+<p><b>Date:</b> 10-06-2026</p>
+
+<button class="action-btn">View</button>
+<button class="action-btn">Download</button>
+<button class="action-btn delete">Delete</button>
+</div>
+
+<div class="record-card">
+<h3>🩻 X-Ray</h3>
+<p><b>Title:</b> Chest X-Ray</p>
+<p><b>Date:</b> 05-06-2026</p>
+
+<button class="action-btn">View</button>
+<button class="action-btn">Download</button>
+<button class="action-btn delete">Delete</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Medical Summary</h2>
+
+<p>📋 Total Records: 12</p>
+<p>💊 Prescriptions: 5</p>
+<p>🩸 Lab Reports: 4</p>
+<p>🩻 Scans & X-Rays: 3</p>
+
+</div>
+
+</div>
+
+</body>
+</html>

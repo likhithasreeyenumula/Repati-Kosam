@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings - Repati Kosam</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>Repati Kosam</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+<a href="medication.html">💊 Medication</a>
+<a href="history.html">📜 History</a>
+<a href="records.html">📋 Records</a>
+<a href="emergency-contact.html">🚨 Emergency</a>
+<a href="ai-assistant.html">🤖 AI Assistant</a>
+<a href="profile.html">👤 Profile</a>
+<a href="settings.html">⚙ Settings</a>
+<a href="index.html">🚪 Logout</a>
+
+</div>
+
+<!-- Top Bar -->
+
+<div class="topbar">
+
+<h3>Settings</h3>
+
+<div class="profile">
+<img src="images/profile.png" alt="Profile">
+
+<div>
+<b>Srinivas</b><br>
+<small>Patient</small>
+</div>
+
+</div>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+<div class="card">
+
+<h2>🔔 Notification Settings</h2>
+
+<label>
+<input type="checkbox" checked>
+ Medicine Reminder Notifications
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" checked>
+ SMS Notifications
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox">
+ Email Notifications
+</label>
+
+</div>
+
+<div class="card">
+
+<h2>⏰ Reminder Preferences</h2>
+
+<label>Reminder Before Medicine</label>
+
+<select>
+<option>5 Minutes Before</option>
+<option selected>10 Minutes Before</option>
+<option>15 Minutes Before</option>
+<option>30 Minutes Before</option>
+<option>1 Hour Before</option>
+</select>
+
+</div>
+
+<div class="card">
+
+<h2>🌙 Appearance</h2>
+
+<label>
+<input type="radio" name="theme" checked>
+ Light Mode
+</label>
+
+<br><br>
+
+<label>
+<input type="radio" name="theme">
+ Dark Mode
+</label>
+
+</div>
+
+<div class="card">
+
+<h2>🔒 Privacy & Security</h2>
+
+<label>
+<input type="checkbox" checked>
+ Enable Account Security Alerts
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" checked>
+ Require Login Authentication
+</label>
+
+<br><br>
+
+<button class="btn">
+Change Password
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🚨 Emergency Settings</h2>
+
+<label>
+<input type="checkbox" checked>
+ Send SOS Alert To Emergency Contacts
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" checked>
+ Share Current Location During SOS
+</label>
+
+</div>
+
+<div class="card">
+
+<h2>💾 Data Management</h2>
+
+<button class="btn">
+📥 Download My Records
+</button>
+
+<br><br>
+
+<button class="btn delete">
+🗑 Delete Account
+</button>
+
+</div>
+
+<div class="card">
+
+<button class="btn" style="width:100%;">
+💾 Save Settings
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

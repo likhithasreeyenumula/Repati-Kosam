@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Repati Kosam</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f4c81,#1d7dd8);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.container{
+width:700px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+h2{
+text-align:center;
+color:#0f4c81;
+margin-bottom:20px;
+}
+
+.row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.input-group{
+margin-bottom:15px;
+}
+
+label{
+display:block;
+margin-bottom:5px;
+font-weight:500;
+}
+
+input, select, textarea{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+width:100%;
+padding:14px;
+background:#1d7dd8;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0f4c81;
+}
+
+p{
+text-align:center;
+margin-top:15px;
+}
+
+a{
+color:#1d7dd8;
+text-decoration:none;
+font-weight:600;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Repati Kosam Registration</h2>
+
+<form action="dashboard.html">
+
+<div class="row">
+
+<div class="input-group">
+<label>Full Name</label>
+<input type="text" placeholder="Enter Full Name" required>
+</div>
+
+<div class="input-group">
+<label>Email</label>
+<input type="email" placeholder="Enter Email" required>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-group">
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter Phone Number" required>
+</div>
+
+<div class="input-group">
+<label>Age</label>
+<input type="number" placeholder="Enter Age" required>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-group">
+<label>Gender</label>
+<select required>
+<option value="">Select Gender</option>
+<option>Female</option>
+<option>Male</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="input-group">
+<label>Blood Group</label>
+<select required>
+<option value="">Select Blood Group</option>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+<option>O+</option>
+<option>O-</option>
+</select>
+</div>
+
+</div>
+
+<div class="input-group">
+<label>Known Allergies</label>
+<input type="text" placeholder="Example: Dust, Penicillin, None">
+</div>
+
+<hr style="margin:20px 0;">
+
+<h3 style="color:#0f4c81;margin-bottom:15px;">
+🚨 Emergency Contact Information
+</h3>
+
+<div class="row">
+
+<div class="input-group">
+<label>Emergency Contact Name</label>
+<input type="text" placeholder="Contact Name" required>
+</div>
+
+<div class="input-group">
+<label>Relationship</label>
+<input type="text" placeholder="Father, Mother, Brother..." required>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-group">
+<label>Emergency Contact Number</label>
+<input type="tel" placeholder="Phone Number" required>
+</div>
+
+<div class="input-group">
+<label>Emergency Contact Email</label>
+<input type="email" placeholder="Email Address">
+</div>
+
+</div>
+
+<div class="input-group">
+<label>Emergency Address</label>
+<textarea rows="3" placeholder="Enter Address"></textarea>
+</div>
+
+<hr style="margin:20px 0;">
+
+<h3 style="color:#0f4c81;margin-bottom:15px;">
+🔐 Account Security
+</h3>
+
+<div class="row">
+
+<div class="input-group">
+<label>Password</label>
+<input type="password" placeholder="Create Password" required>
+</div>
+
+<div class="input-group">
+<label>Confirm Password</label>
+<input type="password" placeholder="Confirm Password" required>
+</div>
+
+</div>
+
+<button type="submit">
+Create Account
+</button>
+
+<p>
+Already have an account?
+<a href="login.html">Login Here</a>
+</p>
+
+</form>
+
+</div>
+
+</body>
+</html>

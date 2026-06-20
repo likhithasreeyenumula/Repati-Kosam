@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medication Management</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fc;
+}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:240px;
+height:100%;
+background:#0f4c81;
+padding-top:20px;
+}
+
+.sidebar h2{
+text-align:center;
+color:white;
+margin-bottom:30px;
+}
+
+.sidebar a{
+display:block;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#1d7dd8;
+}
+
+.topbar{
+position:fixed;
+left:240px;
+right:0;
+top:0;
+height:70px;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 30px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.profile{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.profile img{
+width:45px;
+height:45px;
+border-radius:50%;
+}
+
+.main{
+margin-left:240px;
+margin-top:90px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+h2{
+color:#0f4c81;
+margin-bottom:15px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+padding:12px 20px;
+background:#1d7dd8;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0f4c81;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#1d7dd8;
+color:white;
+padding:12px;
+}
+
+td{
+padding:12px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+.delete{
+background:red;
+}
+
+.edit{
+background:green;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+
+<h2>Repati Kosam</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+<a href="medication.html">💊 Medication</a>
+<a href="history.html">📜 History</a>
+<a href="records.html">📋 Records</a>
+<a href="emergency.html">🚨 SOS</a>
+<a href="profile.html">👤 Profile</a>
+
+</div>
+
+<div class="topbar">
+
+<h3>Medication Management</h3>
+
+<div class="profile">
+<img src="images/profile.png">
+<div>
+<b>Srinivas</b><br>
+<small>Patient</small>
+</div>
+</div>
+
+</div>
+
+<div class="main">
+
+<div class="card">
+
+<h2>Add New Medicine</h2>
+
+<form>
+
+<input type="text" placeholder="Medicine Name" required>
+
+<input type="text" placeholder="Dose (500mg)" required>
+
+<input type="time" required>
+
+<input type="number" placeholder="Duration (Days)" required>
+
+<button>Add Medicine</button>
+
+</form>
+
+</div>
+
+<div class="card">
+
+<h2>Medicine Schedule</h2>
+
+<table>
+
+<tr>
+<th>Medicine</th>
+<th>Dose</th>
+<th>Time</th>
+<th>Duration</th>
+<th>Actions</th>
+</tr>
+
+<tr>
+<td>Paracetamol</td>
+<td>500mg</td>
+<td>08:00 AM</td>
+<td>5 Days</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>Vitamin D</td>
+<td>1 Tablet</td>
+<td>12:00 PM</td>
+<td>30 Days</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>BP Tablet</td>
+<td>50mg</td>
+<td>05:00 PM</td>
+<td>90 Days</td>
+<td>
+<button class="edit">Edit</button>
+<button class="delete">Delete</button>
+</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>

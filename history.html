@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medication History - Repati Kosam</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fc;
+}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:250px;
+height:100%;
+background:#0f4c81;
+padding-top:20px;
+}
+
+.sidebar h2{
+color:white;
+text-align:center;
+margin-bottom:30px;
+}
+
+.sidebar a{
+display:block;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#1d7dd8;
+}
+
+.topbar{
+position:fixed;
+left:250px;
+right:0;
+top:0;
+height:70px;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 30px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.profile{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.profile img{
+width:45px;
+height:45px;
+border-radius:50%;
+}
+
+.main{
+margin-left:250px;
+margin-top:90px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+.card h2{
+color:#0f4c81;
+margin-bottom:15px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-bottom:20px;
+}
+
+.stat-card{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.stat-card h1{
+color:#1d7dd8;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#1d7dd8;
+color:white;
+padding:12px;
+}
+
+td{
+padding:12px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+.taken{
+color:green;
+font-weight:bold;
+}
+
+.missed{
+color:red;
+font-weight:bold;
+}
+
+.pending{
+color:orange;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Repati Kosam</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+<a href="medication.html">💊 Medication</a>
+<a href="history.html">📜 History</a>
+<a href="records.html">📋 Records</a>
+<a href="emergency.html">🚨 Emergency</a>
+<a href="ai-assistant.html">🤖 AI Assistant</a>
+<a href="profile.html">👤 Profile</a>
+
+</div>
+
+<div class="topbar">
+
+<h3>Medication History</h3>
+
+<div class="profile">
+<img src="images/profile.png" alt="">
+<div>
+<b>Srinivas</b><br>
+<small>Patient</small>
+</div>
+</div>
+
+</div>
+
+<div class="main">
+
+<div class="stats">
+
+<div class="stat-card">
+<h1>95%</h1>
+<p>Adherence Rate</p>
+</div>
+
+<div class="stat-card">
+<h1>120</h1>
+<p>Medicines Taken</p>
+</div>
+
+<div class="stat-card">
+<h1>5</h1>
+<p>Missed Doses</p>
+</div>
+
+<div class="stat-card">
+<h1>30</h1>
+<p>Active Days</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Medication Logs</h2>
+
+<table>
+
+<tr>
+<th>Date</th>
+<th>Medicine</th>
+<th>Dose</th>
+<th>Time</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>19-06-2026</td>
+<td>Paracetamol</td>
+<td>500mg</td>
+<td>08:00 AM</td>
+<td class="taken">✅ Taken</td>
+</tr>
+
+<tr>
+<td>19-06-2026</td>
+<td>Vitamin D</td>
+<td>1 Tablet</td>
+<td>12:00 PM</td>
+<td class="pending">⏳ Pending</td>
+</tr>
+
+<tr>
+<td>18-06-2026</td>
+<td>BP Tablet</td>
+<td>50mg</td>
+<td>08:00 PM</td>
+<td class="taken">✅ Taken</td>
+</tr>
+
+<tr>
+<td>17-06-2026</td>
+<td>Calcium</td>
+<td>500mg</td>
+<td>07:00 PM</td>
+<td class="missed">❌ Missed</td>
+</tr>
+
+<tr>
+<td>16-06-2026</td>
+<td>Vitamin C</td>
+<td>1 Tablet</td>
+<td>09:00 AM</td>
+<td class="taken">✅ Taken</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Monthly Performance</h2>
+
+<p>✔ Medicines Taken: 120</p>
+<p>❌ Missed Medicines: 5</p>
+<p>📈 Adherence Rate: 95%</p>
+
+</div>
+
+</div>
+
+</body>
+</html>

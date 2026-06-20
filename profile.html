@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile - Repati Kosam</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fc;
+}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:250px;
+height:100%;
+background:#0f4c81;
+padding-top:20px;
+}
+
+.sidebar h2{
+color:white;
+text-align:center;
+margin-bottom:30px;
+}
+
+.sidebar a{
+display:block;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#1d7dd8;
+}
+
+.topbar{
+position:fixed;
+left:250px;
+right:0;
+top:0;
+height:70px;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 30px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.profile-top{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.profile-top img{
+width:45px;
+height:45px;
+border-radius:50%;
+}
+
+.main{
+margin-left:250px;
+margin-top:90px;
+padding:20px;
+}
+
+.profile-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+text-align:center;
+margin-bottom:20px;
+}
+
+.profile-card img{
+width:140px;
+height:140px;
+border-radius:50%;
+border:4px solid #1d7dd8;
+margin-bottom:15px;
+}
+
+.profile-card h2{
+color:#0f4c81;
+}
+
+.details{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.details h3{
+color:#0f4c81;
+margin-bottom:15px;
+}
+
+.info{
+padding:12px;
+border-bottom:1px solid #ddd;
+}
+
+.info strong{
+color:#1d7dd8;
+}
+
+button{
+margin-top:20px;
+padding:12px 20px;
+background:#1d7dd8;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0f4c81;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="sidebar">
+
+<h2>Repati Kosam</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+<a href="medication.html">💊 Medication</a>
+<a href="history.html">📜 History</a>
+<a href="records.html">📋 Records</a>
+<a href="emergency.html">🚨 Emergency</a>
+<a href="ai-assistant.html">🤖 AI Assistant</a>
+<a href="profile.html">👤 Profile</a>
+<a href="settings.html">⚙ Settings</a>
+
+</div>
+
+<div class="topbar">
+
+<h3>My Profile</h3>
+
+<div class="profile-top">
+<img src="images/profile.png" alt="Profile">
+<div>
+<b>srinivas</b><br>
+<small>Patient</small>
+</div>
+</div>
+
+</div>
+
+<div class="main">
+
+<div class="profile-card">
+
+<img src="images/profile.png" alt="Profile">
+
+<h2>Srinivas</h2>
+
+<p>Patient</p>
+
+<button>📷 Change Profile Photo</button>
+
+</div>
+
+<div class="details">
+
+<h3>Personal Information</h3>
+
+<div class="info">
+<strong>Full Name:</strong> srinivas
+</div>
+
+<div class="info">
+<strong>Email:</strong> srinivas@gmail.com
+</div>
+
+<div class="info">
+<strong>Phone Number:</strong> +91 234567891
+</div>
+
+<div class="info">
+<strong>Age:</strong> 80
+</div>
+
+<div class="info">
+<strong>Gender:</strong> male
+</div>
+
+<div class="info">
+<strong>Blood Group:</strong> O+
+</div>
+
+<div class="info">
+<strong>Known Allergies:</strong> None
+</div>
+
+<h3 style="margin-top:25px;">Emergency Contact</h3>
+
+<div class="info">
+<strong>Name:</strong> Likhitha Sree
+</div>
+
+<div class="info">
+<strong>Relationship:</strong> Daughter
+</div>
+
+<div class="info">
+<strong>Phone:</strong> +91 9876543211
+</div>
+
+<button>✏ Edit Profile</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
